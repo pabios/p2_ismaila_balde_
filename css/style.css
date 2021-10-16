@@ -9,6 +9,9 @@ body {
     overflow-x: hidden;
     
 }
+form{
+    margin-bottom: 10px;
+}
 .carte {
     width:100%;
     height:100%;
@@ -49,9 +52,11 @@ footer a{
 
 
 /**
-* Tablette et ordinateur meme rendu
+*  992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
+* tout ce qui est en dessous de 768 pour les téléphones portables
+* Soit Tablette et ordinateur meme rendu
 ***/
-@media screen and (min-width:768px){
+@media  screen and (min-width:992px), screen and (min-width:768px){
    
     .menu{
         display: flex;
@@ -79,7 +84,7 @@ footer a{
         flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
         list-style-type: none;
         text-align: center;
-        margin-top: -20px;
+        margin-top: -10px;
         
 
     }
@@ -106,39 +111,36 @@ footer a{
       section{
           margin-bottom: 30px;
       }
+     .formV2{
+         display: flex;
+         width: 75%;
+         height: 50px;
+     }
+    
+   
      
-      .ico_lieu{
-        padding: 20px;
+   .formV2 input[type="text"]{ 
+    margin-right: -1px;
+    width: 40%;
+    font-size: 19px;
+    padding-bottom: 10px;
+    }
+
+    .formV2 label{
         background-color: #F2F2F2;
-        border: 1px solid #F2F2F2;
+        padding: 20px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-      }
-      table{
-        border-radius: 10px;
-        height: 50px;
-      }
-      .formulaire tr td{
-          height: 20px;
-      }
-      .input{
-          width: 74%;
-          height: 20px;
-          border: 0px;
-        }
-        input{
-            width: 100%;
-            height: 100%;
-            border: 0px;
-        }
-      .submit{
-          background-color: #0164FC;
-          color: white;
-          border: 1px solid darkgray;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px
+     }
+
+     .bouttonRecherche{
+         background-color: #0164FC;
+         color: white;
+         border: 1px solid #0164FC;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+     }
       
-    }
       .leButtonSearch{
         background-color: #0164FC;
         border: none;
@@ -414,7 +416,9 @@ footer a{
 
 @media screen and (max-width: 768px)
 {
-   
+    .container{
+        margin: 1%;
+    }
     .menu{
         background-color:#FFFFFF;
         
@@ -445,6 +449,7 @@ footer a{
         border-bottom:5px solid white;
         color: black;
         font-size: 20px;
+        text-align: center;
     }
     .lien ul li a:hover{
         color: blue;
@@ -458,55 +463,42 @@ footer a{
     section{
         margin-bottom: 30px;
     }
-     
-    .ico_lieu{
-      padding: 20px;
-      background-color: #F2F2F2;
-      border: 1px solid #F2F2F2;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+    .sec1 h1{
+        font-size: 20px;
     }
-    .formulaire{
-        margin-top: 15px;
+    .formV2{
+        display: flex;
+        width: 75%;
+        height: 40px;
     }
-    table{
-        border-radius: 10px;
-        height: 50px;
-      }
-      .formulaire tr td{
-          height: 20px;
-      }
-      .input{
-          width: 74%;
-          height: 20px;
-          border: 0px;
-        }
-    .submit{
+   
+  
+    
+  .formV2 input[type="text"]{ 
+   margin-right: -1px;
+   width: 60%;
+   font-size: 19px;
+   padding-bottom: 10px;
+   }
+
+   .formV2 label{
+       background-color: #F2F2F2;
+       padding: 10px;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+    }
+
+    .bouttonRecherche{
         background-color: #0164FC;
         color: white;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    input{
-        width: 100%;
-        height: 100%;
-        border: 0px;
+        border: 1px solid #0164FC;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 60px;
     }
-    .leButtonSearch{
-        background-color: #0164FC;
-        border: none;
-        color: white;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px
-      
-    }
+  
     .content {
         text-indent: -9999px;
         line-height: 0;
@@ -742,5 +734,28 @@ footer a{
         background-color: #F2F2F2;
         padding-left: 5%;
 
+    }
+
+     /** accessibilité **/
+
+     .a11y-nav{
+        position: absolute;
+        top: -10em;
+        z-index: 100;
+        width: 100%;
+    }
+    .a11y-nav a{
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+       /** top: 10em;**/
+        padding: 10px;
+    }
+    .a11y-nav a:focus,
+    .a11y-nav a:hover{
+        top: 10em;
+        text-decoration: none;
     }
 }
