@@ -1,13 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=raleway);
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
  
 
 body {
     box-sizing: border-box;
-    font-family: 'raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin : 0;
     width :100% ;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
 }
 form{
     margin-bottom: 10px;
@@ -32,6 +31,10 @@ form{
     background-color: rgba(144, 201, 240, 0.3);
     transition: all 3s ease-out;
     box-shadow: 10px 5px 5px #F2F2F2;
+}
+
+section img{
+    object-fit: fill;
 }
 .box:hover{
     background-color: rgba(0, 0, 0, 0.3);
@@ -77,12 +80,7 @@ footer a{
     text-decoration: none;
 }
 
-/**
-*  992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
-* tout ce qui est en dessous de 768 pour les téléphones portables
-* Soit  ordinateur meme rendu
-***/
-@media  screen and (min-width:992px){
+
    
     .menu{
         display: flex;
@@ -411,22 +409,24 @@ footer a{
         padding-right: 20%;
     }
 
-   
-     
-}
-
+/**
+*  992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
+* tout ce qui est en dessous de 768 pour les téléphones portables
+* Soit  ordinateur meme rendu
+***/
 
 /***************************************
 * Responsive Tablette breakpoint 768px
 ************************************/
 
-@media screen and (min-width:768px) and (max-width:991px)  {
+@media only screen and (max-width:992px)  {
     .container{
         margin: 1%;
     }
     .menu{
         background-color:#FFFFFF;
-        
+        display: flex;
+        flex-direction: column;
     }
     .logo{
         width: 100%;
@@ -460,7 +460,7 @@ footer a{
     .lien ul li a:hover{
         color: blue;
         border-bottom: 5px solid blue;
-
+        border-top: none;
     }
     /**
     *   section 1 
@@ -468,6 +468,9 @@ footer a{
       section{
           margin-bottom: 30px;
       }
+      section img{
+        object-fit:cover;
+    }
      .formV2{
          display: flex;
          width: 75%;
@@ -581,11 +584,14 @@ footer a{
 
 
     /** section 2 **/
+     
+    
     .sec2{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
     }
+
     .main-sec2{
         border: 2px solid #F2F2F2;
         background-color: #F2F2F2;
@@ -605,9 +611,7 @@ footer a{
         background-color: white;
     }
     .box img{
-        width: 100%;
-        height: 130px;
-        margin-top: -15px;
+        object-fit: fill;
         border: 2px solid none;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -641,27 +645,22 @@ footer a{
         font-size: 16px;
     }
     .box_sidebar{
+        background-color: #FFFFFF;
         display: flex;
-        background-color: white;
-        border: 5px solid white;
-        margin-bottom: 50px;
-        border-radius: 10px;
-
+        flex-direction: row;
     }
-    .image_box_sidebar{
-        border: 1px solid white;
-        width: 50%;
-        height: 100%;
-    }
+     
+    
     .image_box_sidebar img{
-        width: 100%;
-        height: 150px;
-        margin-top: -10%;
-        margin-bottom: -10%;
-        border: 2px solid none;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        object-fit: cover;
+        margin: 0 auto;
     }
+    .info_box_sidebar{
+        background-color: #FFFFFF;
+        padding: 15px;
+        width: 100%;
+    }
+   
     /** section 3 **/
      
     .boxMarseille{
@@ -742,51 +741,32 @@ footer a{
         padding-left: 5%;
         padding-right: 20%;
     }
-}
+
+
+
+
+
+
+
 
 /*************************************************
 *  mobile 
 ****************************************/
 
-@media screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
 {
     .container{
-        margin: 1%;
+        margin: 3%;
     }
-    .menu{
-        background-color:#FFFFFF;
-        
-    }
+     
     .logo{
-        width: 100%;
-        text-align: center;
+        margin: 0 auto;
     }
     .lien{
-        width: 100%;
-         
+        margin: 0 auto;     
     }
-    .lien ul{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .lien ul li {
-        flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
-        list-style-type: none;
-        
-
-    }
-    .lien ul li a{
-        display: block;
-        text-decoration: none;
-        padding-bottom:30px ;
-        border-bottom:5px solid white;
-        color: black;
-        font-size: 20px;
-        text-align: center;
-    }
+       
     .lien ul li a:hover{
-        color: blue;
         border-bottom: 5px solid blue;
 
     }
@@ -794,23 +774,19 @@ footer a{
     /**
     *   section 1 
     ****/
-    section{
-        margin-bottom: 30px;
-    }
+    
     .sec1 h1{
         font-size: 20px;
     }
     .formV2{
         display: flex;
-        width: 75%;
+        width: 100%;
         height: 40px;
     }
-   
-  
     
   .formV2 input[type="text"]{ 
    margin-right: -1px;
-   width: 60%;
+   width: 70%;
    font-size: 13px;
    padding-bottom: 10px;
    }
@@ -919,78 +895,32 @@ footer a{
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-}
-    .main-sec2{
-        border: 2px solid #F2F2F2;
-        background-color: #F2F2F2;
-    }
-    .les_box{
+  }
+     
+    .les_box{   
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: column;   
     }
     .box{
         border: 5px solid white;
         border-radius: 20px;
         margin-bottom: 15px;
         background-color: white;
+        width: 100%;
     }
     .box img{
-        width: 100%;
-        height: 130px;
-        margin-top: -15px;
-        border: 2px solid none;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        object-fit: fill;       
     }
-    .bleu{
-        color: blue;
-    }
+     
 
-    .videIco i{
-        color: gainsboro;
-    }
-    .afficherPlus{
-        margin: 15px;
-        font-weight: bold;
-    }
+    
 
     /**sidebar**/
-    .sidebar{
-        border: 2px solid #F2F2F2;
-        background-color: #F2F2F2;
-    }
-    .titre_sidebar{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        padding: 10px;
-    }
-    .titre_sidebar i{
-        color: black;
-        font-size: 16px;
-    }
-    .box_sidebar{
-        display: flex;
-        background-color: white;
-        border: 5px solid white;
-        margin-bottom: 50px;
-        border-radius: 10px;
-
-    }
-    .image_box_sidebar{
-        border: 1px solid white;
-        width: 50%;
-        height: 100%;
-    }
+      
+    
+    
     .image_box_sidebar img{
-        width: 100%;
-        height: 150px;
-        margin-top: -10%;
-        margin-bottom: -10%;
-        border: 2px solid none;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        object-fit: fill;
     }
 
     /** section 3 **/
@@ -998,64 +928,31 @@ footer a{
     .boxMarseille{
         display: flex;
         flex-direction: column;
+
     }
     .laGrandeBox{
         border-radius: 15px;
-    }
-    .laGrandeBox img{
         width: 100%;
-        height: 150px;
-        margin-top: -12px;
-        border:3px solid none;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
     }
+    
 
     .lesPetiteBox{
         border: 3px solid white;
         border-radius: 20px;
-    }
-    .lesPetiteBox img{
-        width: 99%;
-        height: 200px;
-        border: 1px solid white;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .box_{
-        border-bottom: 2px solid gray;
-        border-radius: 20px;
-    }
-    
-    .box__{
-        
-        border-bottom: 2px solid gray;
-        border-radius: 20px;
-    }
-    .box2_1 img{
-        margin-top: -15px;
-
-    }
-    .box2_2 img{
-        margin-top: -10px;
-    }
-    
-    .box4_1 img{
-        margin-top: -15px;
+        width: 100%;
     }
      
-    .box2{
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-         flex-wrap: wrap;
+    .sec3 img{
+        margin: 0 auto;
+        object-fit:fill;
 
     }
-    .box4{
-         display: flex;
-         flex-direction: column;
-         justify-content:  space-between;
-    }
+    
+     
+    
+     
+     
+    
     .boxMarseille .description{
         background-color: white;
     }
