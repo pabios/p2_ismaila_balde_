@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
- 
+
 
 body {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    margin : 0;
-    width :100% ;
+    margin : 0 auto;
+    width :100%;
     overflow-x: hidden;   
 }
+
 form{
     margin-bottom: 10px;
 }
@@ -36,23 +37,7 @@ form{
 section img{
     object-fit: fill;
 }
-.box:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: all 3s ease-out;
-}
-.box_sidebar:hover{
-    background-color: rgba(0, 0, 30, 0.3); 
-    transition: all 2s ease-out;
-}
  
-.box_:hover,.box__:focus {
-     background-color: rgba(0, 0, 0, 0.1);  
-    transition: all 1s ease-out;
-}
-.box__:hover,.box__:focus {
-    background-color: rgba(0, 0, 0, 0.1);  
-   transition: all 1s ease-out;
-}
 footer a{
     text-decoration: none;
     color: black;
@@ -250,12 +235,16 @@ footer a{
     /** section 2 **/
     .sec2{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .main-sec2{
+        display: flex;
+        flex-wrap: wrap;
         border: 2px solid #F2F2F2;
         background-color: #F2F2F2;
         width: 70%;
+        /* flex-wrap */
     }
     .les_box{
         display: flex;
@@ -416,7 +405,7 @@ footer a{
 ***/
 
 /***************************************
-* Responsive Tablette breakpoint 768px
+* Responsive Tablette breakpoint 992px
 ************************************/
 
 @media only screen and (max-width:992px)  {
@@ -448,20 +437,34 @@ footer a{
         
 
     }
+   
+    /************/
+
+     
+    .lien ul li {
+        flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
+        list-style-type: none;
+        text-align: center;
+        margin-top: -10px;
+        
+
+    }
     .lien ul li a{
         display: block;
         text-decoration: none;
-        padding-bottom:30px ;
-        border-bottom:5px solid white;
+        padding-top:30px ;
+        border-top:5px solid white;
         color: black;
         font-size: 20px;
-        text-align: center;
     }
     .lien ul li a:hover{
         color: blue;
-        border-bottom: 5px solid blue;
-        border-top: none;
+        border-top: 5px solid blue;
+
     }
+
+
+    /***************/
     /**
     *   section 1 
     ****/
@@ -766,7 +769,27 @@ footer a{
         margin: 0 auto;     
     }
        
+    .lien ul li {
+        flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
+        list-style-type: none;
+        text-align: center;
+        margin-top: -10px;
+        
+
+    }
+    .lien ul li a{
+        display: block;
+        text-decoration: none;
+        border-bottom: 5px solid white;
+        padding-top:30px ;
+        border-top:none;
+        color: black;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
     .lien ul li a:hover{
+        color: blue;
+        border-top:   none;
         border-bottom: 5px solid blue;
 
     }
