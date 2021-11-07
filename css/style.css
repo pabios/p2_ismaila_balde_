@@ -243,7 +243,7 @@ footer a{
     /** section 2 **/
     .sec2{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
     .main-sec2{
@@ -252,9 +252,10 @@ footer a{
         border: 2px solid #F2F2F2;
         background-color: #F2F2F2;
         border-radius: 15px;
-        width: 68%;
         padding: 20px;
         margin-bottom: 10px;
+        margin-right: 4%;
+        width: 70%;
     }
     .main-sec2 h2{
         padding-left: 15px;
@@ -299,8 +300,8 @@ footer a{
         border: 2px solid #F2F2F2;
         border-radius: 20px;
         background-color: #F2F2F2;
-        width: 25%;
         padding: 15px;
+        width: 25%;
 
     }
     .sidebar h2{
@@ -440,9 +441,8 @@ footer a{
         margin: 1%;
     }
     .menu{
-        background-color:#FFFFFF;
-        display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0px;
     }
     .logo{
         width: 100%;
@@ -450,247 +450,34 @@ footer a{
     }
     .lien{
         width: 100%;
-         
-    }
-    .lien ul{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .lien ul li {
-        flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
-        list-style-type: none;
-        
-        
-
-    }
-   
-    .lien ul li {
-        flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
-        list-style-type: none;
-        text-align: center;
-        margin-top: -10px;
-        
-
-    }
-    .lien ul li a{
-        display: block;
-        text-decoration: none;
-        padding-top:30px ;
-        border-top:5px solid white;
-        color: black;
-        font-size: 20px;
-    }
-    .lien ul li a:hover{
-        color: blue;
-        border-top: 5px solid blue;
-
     }
 
-
-    /***************/
-    /**
-    *   section 1 
-    ****/
-      section{
-          margin-bottom: 30px;
-      }
-      section img{
-        object-fit:cover;
-    }
-     .formV2{
-         display: flex;
-         width: 75%;
-         height: 50px;
-     }
+    /** section 1 **/
      
+    section{
+      margin-bottom: 30px;
+    }
+      
    .formV2 input[type="text"]{ 
-    margin-right: -1px;
-    width: 80%;
-    font-size: 19px;
-    padding-bottom: 10px;
-    border: 1px solid #F2F2F2;
-    }
-
-    .formV2 label{
-        background-color: #F2F2F2;
-        padding: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-     }
-
-     .bouttonRecherche{
-         background-color: #0164FC;
-         color: white;
-         border: 1px solid #0164FC;
-         border-top-right-radius: 20px;
-         border-bottom-right-radius: 20px;
-     }
-      
-      
-      .leButtonSearch{
-        background-color: #0164FC;
-        border: none;
-        color: white;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px
-      
-    }
-
-    /** filtre **/
-    .filtre{
-        display: flex;
-        flex-wrap: wrap;
         width: 80%;
     }
-    .filtre p{
-        margin-top: 30px;
-    }
-    .nav_filtre{
-        width: 95%;
 
-    }
-    .nav_filtre ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-
-
-    }
-    .nav_filtre ul li{
-        list-style-type: none;
-        border: 1px solid gray;
-         border-radius: 20px;
-          font-size: 20px;
-          font-weight: bold;
-          padding-top:10px;
-          padding-right:10px;
-          padding-bottom:10px;
-
-
-    }
-    .nav_filtre ul li span{
-        border: 2px solid #DEEBFF;
-        border-radius: 20px;
-        padding:8px;
-        background-color:#DEEBFF;
-        margin-right: 4px;
-
-
-    }
-    .nav_filtre ul li span i{
-        color: #2F6DFD;
-    }
-    .info_resultat_filtre{
-        width: 100%;
-    }
-    .info_resultat_filtre{
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-    .icone_resultat{
-        border: 1px solid #F2F2F2;
-        border-radius: 20px;
-        margin-right: 5px;
-        padding : 10px;
-        width: 10px;
-    }
-    .icone_resultat i{
-        font-size: 15px;
-        color: blue;
-        margin-left: 2px;
-    }
-    .info{
-        padding : 10px;
-
-    }
-
-
-    /** section 2 **/
-     
-    
+    /** section 2 **/  
     .sec2{
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
-     .main-sec2 h2{
-         width: 100%;
-     }
     .main-sec2{
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #F2F2F2;
-        margin: 20px;
-        background-color: #F2F2F2;;
         width: 100%;
         margin-bottom: 20px;
-        
+        margin-right: 0px;
     }
     .les_box{
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
     }
-    .box{
-        border: 5px solid white;
-        border-radius: 20px;
-        width: 30%;
-        margin-bottom: 15px;
-        background-color: white;
-    }
-    .box img{
-        object-fit: fill;
-        border: 2px solid none;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .bleu{
-        color: blue;
-    }
-    
-    .videIco i{
-        color: gainsboro;
-    }
-    .afficherPlus{
-        margin: 15px;
-        font-weight: bold;
-    }
-
-     /**sidebar**/
+     /**sidebar section 2**/
     .sidebar{
-        border: 2px solid #F2F2F2;
-        background-color: #F2F2F2;
         width: 100%;
-    }
-     
-    .titre_sidebar{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        padding: 10px;
-    }
-    .titre_sidebar i{
-        color: black;
-        font-size: 16px;
-    }
-    .box_sidebar{
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction: row;
-        
-    }
-     
-    
-    .image_box_sidebar img{
-        object-fit: cover;
-        margin: 0 auto;
     }
     .info_box_sidebar{
         background-color: #FFFFFF;
@@ -699,93 +486,10 @@ footer a{
     }
    
     /** section 3 **/
-     
-     
-    .boxMarseille{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .boxMarseille{         
+        flex-direction: row-reverse;
     }
-    .laGrandeBox{
-        width: 25%;
-        border-radius: 15px;
-    }
-    .laGrandeBox img{
-        width: 100%;
-        height: 500px;
-        margin-top: -12px;
-        border:3px solid none;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    .lesPetiteBox{
-        width: 20%;
-        border: 3px solid white;
-        border-radius: 20px;
-    }
-     
-    .lesPetiteBox img{
-        width: 99%;
-        height: 200px;
-        border: 1px solid white;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .box_{
-        border-bottom: 2px solid gray;
-        border-radius: 20px;
-    }
-     
-    .box__{
-        
-        border-bottom: 2px solid gray;
-        border-radius: 20px;
-    }
-    .box2_1 img{
-        margin-top: -15px;
-
-    }
-    .box2_2 img{
-        margin-top: -10px;
-    }
-    
-    .box4_1 img{
-        margin-top: -15px;
-    }
-     
-    .box2{
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-         flex-wrap: wrap;
-
-    }
-    .box4{
-         display: flex;
-         flex-direction: column;
-         justify-content:  space-between;
-    }
-     
-      
-    
-     
-
-    /** footer **/
-    footer{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: #F2F2F2;
-        padding-left: 5%;
-        padding-right: 20%;
-    }
-
-
-
-
-
-
+}
 
 
 /*************************************************
@@ -795,29 +499,19 @@ footer a{
 @media only screen and (max-width: 768px)
 {
     .container{
-        margin: 3%;
+        margin: 20px;
     }
      
     .logo{
         margin: 0 auto;
     }
-    .lien{
-        margin: 0 auto;     
+     
+    .lien ul li{
+        margin-left:-36px;
     }
-       
-    .lien ul li {
-        flex: 1 0 auto;/** si ya de la place en trop couvre tout lespace, 0 taille pas plus petit , valeur auto*/
-        list-style-type: none;
-        text-align: center;
-        margin-top: -10px;
-        
-
-    }
+     
     .lien ul li a{
-        display: block;
-        text-decoration: none;
         border-bottom: 5px solid white;
-        padding-top:30px ;
         border-top:none;
         color: black;
         font-size: 20px;
@@ -827,45 +521,45 @@ footer a{
         color: blue;
         border-top:   none;
         border-bottom: 5px solid blue;
-
     }
 
     /**
     *   section 1 
     ****/
-    
+    .sec1{
+        margin: 10px;
+    }
     .sec1 h1{
         font-size: 20px;
     }
     .formV2{
         display: flex;
         width: 100%;
-        height: 40px;
+        height: 50px;
     }
     
-  .formV2 input[type="text"]{ 
-   margin-right: -1px;
-   width: 70%;
-   font-size: 13px;
-   padding-bottom: 10px;
-   }
+    .formV2 input[type="text"]{ 
+        width: 70%;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
 
    .formV2 label{
-       background-color: #F2F2F2;
-       padding: 10px;
-       border-top-left-radius: 20px;
-       border-bottom-left-radius: 20px;
+       width: 8%;
+       text-align: center;
+       padding-top: 15px;
+       border-top-left-radius: 15px;
+       border-bottom-left-radius: 15px;
+    }
+    .info_resultat_filtre{
+        flex-wrap: nowrap;
     }
 
     .bouttonRecherche{
-        background-color: #0164FC;
-        color: white;
-        border: 1px solid #0164FC;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        width: 60px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
   
     .content {
@@ -881,113 +575,81 @@ footer a{
 
   /** filtre **/
   .filtres{
-    display: flex;
-    margin: 1px;
-    background-color: red;
-    
-
+    margin-left: 0px;
    }
+   .filtree{   
+        margin: 10px;
+    }
    .filtres h3{
        width: 100%;
-       margin-left: 25px;
-       padding-bottom: -90px;
+       margin-left: 10px;
+       padding: 0px;
    }
-
-    
    
    
    
-
-   
-  .icone_resultat{
-      border: 1px solid #F2F2F2;
-      border-radius: 20px;
-      margin-right: 5px;
-      padding : 10px;
-      width: 10px;
-  }
-  .icone_resultat i{
-      font-size: 15px;
-      color: blue;
-  }
-  .info{
-      padding : 10px;
-
-  }
   /** section 2 **/
   .sec2{
-    display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
+    margin: auto;
+
+  }
+  .main-sec2{
+      background-color: white;
+      border: none;
+      margin: 0px;
+      padding: 0px;
   }
      
-    .les_box{   
-        display: flex;
-        flex-direction: column;   
+   .les_box{   
+        flex-direction: column; 
+        width: 100%;
     }
     .box{
-        border: 5px solid white;
-        border-radius: 20px;
-        margin-bottom: 15px;
         background-color: white;
-        width: 100%;
+        width: auto;
     }
     .box img{
         object-fit: fill;       
     }
-     
-
-    
 
     /**sidebar**/
-      
-    
-    
+    .sidebar{
+        border-radius: 0px;
+    }
     .image_box_sidebar img{
         object-fit: fill;
     }
 
     /** section 3 **/
-     
+    .sec3{
+       margin: auto;
+        flex-wrap: wrap;
+    }
     .boxMarseille{
-        display: flex;
         flex-direction: column;
 
     }
     .laGrandeBox{
-        border-radius: 15px;
-        width: 100%;
+        width: auto;
+        margin-bottom: 10px;
     }
-    
-
+    .laGrandeBox img{
+        height: 160px;
+    }
     .lesPetiteBox{
         border: 3px solid white;
-        border-radius: 20px;
-        width: 100%;
+        width: auto;
     }
-     
     .sec3 img{
         margin: 0 auto;
         object-fit:fill;
-
     }
     
-     
-    
-     
-     
-    
-     
 
      /** footer **/
      footer{
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        background-color: #F2F2F2;
-        padding-left: 5%;
-
     }
-
-    
 }
