@@ -130,7 +130,7 @@ section{
 
 .filtree{
     border: 2px solid #DCDCDC;
-    border-radius: 40px;
+    border-radius: 30px;
     display: inline-block;
     font-weight: bold;
     margin: 20px;
@@ -143,10 +143,9 @@ section{
 }
 .icone{
     font-size: 25px;
-    margin-left: -8px;
-    margin-top: -2px;
-    margin-bottom: -2px;
+    margin-left: -12px;
 }
+ 
 
 .lightBlue{
     color: #DEEBFF;
@@ -561,11 +560,11 @@ footer a{
    .les_box{   
         flex-direction: column; 
         width: 100%;
+        margin-left: 15px;
     }
     .box{
         background-color: white;
-        width: 90%;
-        margin-left: 10px;
+        width: 91%;
     }
     .box img{
         object-fit: fill;       
@@ -583,6 +582,9 @@ footer a{
         border-radius: 0px;
          margin: 0px;
     }
+    .info_box_sidebar{
+        width: 55%;
+    }
     .titre_sidebar{
           justify-content: space-around;
     }
@@ -593,11 +595,9 @@ footer a{
     .box_sidebar{
         width: 90%;
     }
-     
     .image_box_sidebar img{
         object-fit: fill;
     }
-
 
     /** section 3 Activete A Marseille **/
     .sec3{
@@ -610,13 +610,13 @@ footer a{
     }
     .boxMarseille{
         flex-direction: column;
-    }
-    .box_appear{
         margin: 20px;
+        margin-left: 10px;
     }
+     
     .laGrandeBox{
         width: auto;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .laGrandeBox img{
         height: 160px;
@@ -624,6 +624,10 @@ footer a{
     .lesPetiteBox{
         border: 3px solid white;
         width: auto;
+        margin-bottom: 30px;
+    }
+    .box-marseille__mt{
+        margin-top: 20px;
     }
     .sec3 img{    
         object-fit:fill;
