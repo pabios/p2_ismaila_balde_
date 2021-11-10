@@ -193,6 +193,9 @@ section{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+.box_appear {
+    box-shadow: 5px 5px 8px #555;
+}
 .box_appear:hover{
     transform: scale(0.9, 0.8);
 }
@@ -214,8 +217,8 @@ section{
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 10px;
-    margin-right: 4%;
-    width: 70%;
+    margin-right: 3%;
+    width: 67%;
 }
 .main-sec2 h2{
     padding-left: 15px;
@@ -259,7 +262,7 @@ section{
     border-radius: 20px;
     background-color: #F2F2F2;
     padding: 15px;
-    width: 25%;
+    width: 33%;
 }
 .sidebar h2{
     font-weight: bold;
@@ -283,12 +286,30 @@ section{
     border-radius: 10px;
 }
 .info_box_sidebar{
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
+    margin-top: 10px;
     width: 50%;
+}
+.titre_h4{
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.sidebar-info__item2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.sidebar-info__item3{
+    margin-top: auto;
+}
+.fas-color__none{
+    color: gainsboro;
 }
 .image_box_sidebar{
     border: 1px solid white;
-    width: 50%;
+    width: 45%;
     height: 100%;
 }
 .image_box_sidebar img{
@@ -331,23 +352,12 @@ section{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.box_{
+.box-marseille__border{
     border-bottom: 2px solid gray;
     border-radius: 20px;
 }
-.box__{
-    
-    border-bottom: 2px solid gray;
-    border-radius: 20px;
-}
-.box2_1 img{
-    margin-top: -15px;
-}
-.box2_2 img{
-    margin-top: -10px;
-}
-.box4_1 img{
-    margin-top: -15px;
+.box-marseille__mt img{
+    margin-top: -15px
 }
 .box2{
     display: flex;
@@ -441,15 +451,20 @@ footer a{
 @media only screen and (max-width: 768px)
 {
     .container{
-        margin: 20px;
+        /*margin: 20px;*/
     }
      
     .logo{
         margin: 0 auto;
     }
      
+    ul {
+        width: 100%;
+    }
     .lien ul li{
-        margin-left:-36px;
+        margin-left:-37px;
+        margin-right: -20px;
+        width: 50%;
     }
      
     .lien ul li a{
@@ -471,11 +486,17 @@ footer a{
     }
     .sec1 h1{
         font-size: 20px;
+        margin:  20px;
+        margin-left: 10px;
+    }
+    .description_sec1{
+        margin-left: 10px;
     }
     .formV2{
         display: flex;
         width: 100%;
         height: 50px;
+         
     }
     .formV2 input[type="text"]{ 
         width: 70%;
@@ -505,14 +526,16 @@ footer a{
         border-bottom-left-radius: 15px;
     }
     
-     
-
   /** filtre **/
   .filtres{
-    margin-left: 0px;
+    margin:auto;
    }
    .filtree{   
-        margin: 10px;
+        margin: 6px;
+    }
+    .filtre-content {
+        font-size: 13px;
+        font-weight: bold;
     }
    .filtres h3{
        width: 100%;
@@ -523,7 +546,7 @@ footer a{
     margin-bottom: 35px;
     margin-top: 20px;
    }  
-  /** section 2 **/
+  /** section 2 Hebergement A marseille **/
   .sec2{
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -541,28 +564,55 @@ footer a{
     }
     .box{
         background-color: white;
-        width: auto;
+        width: 90%;
+        margin-left: 10px;
     }
     .box img{
         object-fit: fill;       
     }
+    .afficherPlus{
+        margin: 0px;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
 
-    /**sidebar**/
+    /** Les plus populaire  .sidebar**/
     .sidebar{
         border-radius: 0px;
+         margin: 0px;
     }
+    .titre_sidebar{
+          justify-content: space-around;
+    }
+    .titre_sidebar h2{
+        margin-left: -30px;
+        margin-right: 10px;
+    }
+    .box_sidebar{
+        width: 90%;
+    }
+     
     .image_box_sidebar img{
         object-fit: fill;
     }
 
-    /** section 3 **/
+
+    /** section 3 Activete A Marseille **/
     .sec3{
        margin: auto;
         flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .titre-sec3 {
+        margin-left: 20px;
     }
     .boxMarseille{
         flex-direction: column;
-
+    }
+    .box_appear{
+        margin: 20px;
     }
     .laGrandeBox{
         width: auto;
@@ -575,12 +625,9 @@ footer a{
         border: 3px solid white;
         width: auto;
     }
-    .sec3 img{
-        margin: 0 auto;
+    .sec3 img{    
         object-fit:fill;
     }
-    
-
      /** footer **/
      footer{
         flex-direction: column;
