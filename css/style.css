@@ -68,8 +68,8 @@ body {
     font-size: 20px;
 }
 .lien ul li a:hover{
-    color: blue;
-    border-top: 5px solid blue;
+    color: #0065FC;
+    border-top: 5px solid #0065FC;
 
 }
 .container{
@@ -80,10 +80,12 @@ body {
 section{
     margin-bottom: 30px;
 }
-
+.mobile__search {
+    display: none;
+}
 .formV2{
     display: flex;
-    width: 75%;
+    width: 55%;
     height: 50px;
     margin-top: 20px;
 }
@@ -186,10 +188,16 @@ section{
 }
 
 /** section 2 **/
-.sec2{ /* ordinateur */
+.sec2{  
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+.box_appear:hover{
+    transform: scale(0.9, 0.8);
+}
+.box_appear::after {
+    opacity: 1;
 }
 
 .carte {
@@ -275,7 +283,8 @@ section{
     border-radius: 10px;
 }
 .info_box_sidebar{
-    padding-left: 10px;
+    margin-left: 10px;
+    width: 50%;
 }
 .image_box_sidebar{
     border: 1px solid white;
@@ -444,18 +453,19 @@ footer a{
     }
      
     .lien ul li a{
-        border-bottom: 5px solid white;
+        border-bottom: 5px solid #F2F2F2;
         border-top:none;
         color: black;
         font-size: 20px;
         padding-bottom: 20px;
     }
     .lien ul li a:hover{
-        color: blue;
+        color: #0065FC;
         border-top:   none;
-        border-bottom: 5px solid blue;
+        border-bottom: 5px solid #0065FC;
     }
     /** section 1 ****/
+    
     .sec1{
         margin: 10px;
     }
@@ -482,22 +492,20 @@ footer a{
     .info_resultat_filtre{
         flex-wrap: nowrap;
     }
+    .desktop_searche{
+        display: none;
+    }
+    .mobile__search{
+        display: block;
+    }
     .bouttonRecherche{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
-    .content {
-        text-indent: -9999px;
-        line-height: 0;
-      }
-    .content::after {
-        content: "\1F50D"; /** unicode-table.com**/
-        text-indent: 0;
-        display: block;
-        line-height: initial;
-    }
+    
+     
 
   /** filtre **/
   .filtres{
