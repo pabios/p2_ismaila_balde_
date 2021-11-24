@@ -32,7 +32,7 @@ body {
     text-decoration: none;
 }
 
-.menu{
+.menu{ 
     display: flex;
     background-color:#FFFFFF;
     padding-left: 5%;
@@ -43,6 +43,11 @@ body {
 }
 .logo{
     width: 70%;
+    padding-top: 25px;
+}
+.logo img{
+    width: 100px;
+    height: 60px;
 }
 .lien{
     width: 30%;
@@ -57,7 +62,7 @@ body {
     flex: 1 0 auto;  
     list-style-type: none;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -17px;
 }
 .lien ul li a{
     display: block;
@@ -92,7 +97,7 @@ section{
 
 .formV2 input[type="text"]{ 
     padding: 10px;
-    width: 40%;
+    width: 48%;
     font-size: 19px;
     padding-bottom: 10px;
     border: 1px solid #F2F2F2;
@@ -144,6 +149,8 @@ section{
 .icone{
     font-size: 25px;
     margin-left: -15px;
+    margin-top:-3px;
+    margin-bottom:-3px;
 }
  
 
@@ -193,7 +200,7 @@ section{
     justify-content: space-between;
 }
 .box_appear {
-    box-shadow: 5px 5px 8px #555;
+    box-shadow: 1px 8px 8px #F1F1F5;/*droite-bas-degre-color */
 }
 .box_appear:hover{
     transform: scale(0.9, 0.8);
@@ -373,6 +380,9 @@ section{
     font-weight: bold;
     padding-left: 12px;
 }
+.bm__pd-top{
+    padding-bottom: -55px;
+}
 
 /** footer **/
 footer{
@@ -407,6 +417,25 @@ footer a{
     }
     .lien{
         width: 100%;
+    }
+    ul {
+        width: 100%;
+    }
+    .lien ul li{
+        margin-left:-37px;
+        margin-right: -37px;
+    }
+    .lien ul li a{
+        border-bottom: 5px solid #F2F2F2;
+        border-top:none;
+        color: black;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .lien ul li a:hover{
+        color: #0065FC;
+        border-top:   none;
+        border-bottom: 5px solid #0065FC;
     }
     /** section 1 **/
     section{
