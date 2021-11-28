@@ -251,6 +251,7 @@ section{
     border: 2px solid none;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit:cover;
 }
 .bleu{
     color: #0065FC;
@@ -337,6 +338,9 @@ section{
     width: 25%;
     border-radius: 15px;
 }
+.box1{
+    padding-top: 10px;
+}
 .laGrandeBox img{
     width: 100%;
     height: 500px;
@@ -344,6 +348,7 @@ section{
     border:3px solid none;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit:cover;
 }
 
 .lesPetiteBox{
@@ -357,13 +362,16 @@ section{
     border: 1px solid white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit:cover;
+
 }
 .box-marseille__border{
     border-bottom: 2px solid gray;
     border-radius: 20px;
 }
 .box-marseille__mt img{
-    margin-top: -15px
+    margin-top: -15px;
+
 }
 .box2{
     display: flex;
@@ -374,16 +382,18 @@ section{
 .box4{
     display: flex;
     flex-direction: column;
-    justify-content:  space-between;
+    justify-content: space-between;
 }
 .boxMarseille .description{
     font-weight: bold;
     padding-left: 12px;
 }
-.bm__pd-top{
-    padding-bottom: -55px;
+.bm__flex-mt{
+    margin-top: auto;
 }
-
+.bm__item1-mt {
+    padding-top: 13px;
+}
 /** footer **/
 footer{
     display: flex;
