@@ -193,7 +193,11 @@ section{
     padding : 10px;
 }
 
-/** section 2 **/
+/** 
+*
+*  section 2 
+*  Hebergments A Marseille
+**/
 .sec2{  
     display: flex;
     flex-wrap: nowrap;
@@ -263,17 +267,28 @@ section{
     margin: 15px;
     font-weight: bold;
 }
-/**sidebar**/
+.afficherPlus a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+/**
+* Les plus populaire
+* sidebar
+**/
 .sidebar{
     border: 2px solid #F2F2F2;
     border-radius: 20px;
     background-color: #F2F2F2;
     padding: 15px;
     width: 33%;
+    height: auto;
 }
 .sidebar h2{
     font-weight: bold;
 }
+ 
 .titre_sidebar{
     display: flex;
     flex-wrap: nowrap;
@@ -589,6 +604,9 @@ footer a{
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
+  .sec2 img {
+      object-fit: cover;
+  }
   .main-sec2{
       background-color: white;
       border: none;
@@ -605,9 +623,7 @@ footer a{
         background-color: white;
         width: 91%;
     }
-    .box img{
-        object-fit: fill;       
-    }
+     
     .afficherPlus{
         margin: 0px;
         font-weight: bold;
@@ -669,7 +685,7 @@ footer a{
         margin-top: 20px;
     }
     .sec3 img{    
-        object-fit:fill;
+        object-fit:cover;
     }
      /** footer **/
      footer{
