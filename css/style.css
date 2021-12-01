@@ -204,7 +204,7 @@ section{
     justify-content: space-between;
 }
 .box_appear {
-    box-shadow: 1px 8px 8px #F1F1F5;/*droite-bas-degre-color */
+    box-shadow: 1px 11px 8px #c2bec5;/*droite-bas-degre-color */
 }
 .box_appear:hover{
     transform: scale(0.9, 0.8);
@@ -283,7 +283,7 @@ section{
     background-color: #F2F2F2;
     padding: 15px;
     width: 33%;
-    height: auto;
+    height: 700px;
 }
 .sidebar h2{
     font-weight: bold;
@@ -297,7 +297,7 @@ section{
 }
 .titre_sidebar i{
     color: black;
-    font-size: 16px;
+    font-size: 22px;
     padding-top: 8px;
 }
 .box_sidebar{
@@ -486,6 +486,7 @@ footer a{
      /**sidebar section 2**/
     .sidebar{
         width: 100%;
+        height: auto;
     }
     .info_box_sidebar{
         background-color: #FFFFFF;
@@ -636,6 +637,8 @@ footer a{
     .sidebar{
         border-radius: 0px;
          margin: 0px;
+        height: auto;
+
     }
     .info_box_sidebar{
         width: 55%;
