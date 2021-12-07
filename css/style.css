@@ -47,7 +47,8 @@ body {
 }
 .logo img{
     width: 100px;
-    height: 60px;
+    /*height: 60px;*/
+
 }
 .lien{
     width: 30%;
@@ -204,7 +205,7 @@ section{
     justify-content: space-between;
 }
 .box_appear {
-    box-shadow: 1px 11px 8px #c2bec5;/*droite-bas-degre-color */
+    box-shadow: 0px 15px 8px #f6f6f6;/*droite-bas-degre-color */
 }
 .box_appear:hover{
     transform: scale(0.9, 0.8);
@@ -241,9 +242,11 @@ section{
 .box{
     border: 5px solid white;
     border-radius: 20px;
-    width: 30%;
-    margin-bottom: 15px;
+    /*width: 30%;*/
+    width: 200px;
+    margin-bottom: 25px;
     background-color: white;
+    flex-grow: 0;
 }
 .box p, .box h4{
     padding-left: 20px;
@@ -283,7 +286,7 @@ section{
     background-color: #F2F2F2;
     padding: 15px;
     width: 33%;
-    height: 700px;
+    height: 710px;
 }
 .sidebar h2{
     font-weight: bold;
@@ -306,6 +309,8 @@ section{
     border: 2px solid white;
     margin-bottom: 40px;
     border-radius: 10px;
+    flex-grow: 0;
+
 }
 .info_box_sidebar{
     display: flex;
@@ -348,10 +353,15 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+}
+.boxMarseille div{
+    flex-grow: 0;
 }
 .laGrandeBox{
     width: 25%;
     border-radius: 15px;
+
 }
 .box1{
     padding-top: 10px;
@@ -370,6 +380,7 @@ section{
     width: 20%;
     border: 3px solid white;
     border-radius: 20px;
+
 }
 .lesPetiteBox img{
     width: 99%;
@@ -381,7 +392,6 @@ section{
 
 }
 .box-marseille__border{
-    border-bottom: 2px solid gray;
     border-radius: 20px;
 }
 .box-marseille__mt img{
