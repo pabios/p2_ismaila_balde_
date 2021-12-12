@@ -5,7 +5,8 @@ body {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     margin : 0 auto;
-    width :100%;
+    /*width :100%;*/
+    max-width: 1440px;
     overflow-x: hidden;   
 }
 
@@ -51,24 +52,34 @@ body {
 nav{
     display: flex;
 }
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
 .elm2,.elm3{
     padding-right: 50px;
     border-top: 5px solid white;
     padding-top: 45px;
+    padding-left: 40px;
+    text-align: center;
 
 }
 .link:hover{
     border-top: 5px solid #0065FC;
+    text-align: center;
+
 }
+ 
+ 
 .link a{
     text-decoration: none;
     color: black;
     font-size: 20px;
     padding-left: 15px;
-
 }
-
-
 .menu{ 
     display: none;
     background-color:#FFFFFF;
@@ -85,7 +96,6 @@ nav{
 .logo img{
     width: 100px;
     /*height: 60px;*/
-
 }
 .lien{
     width: 30%;
@@ -117,6 +127,7 @@ nav{
 }
 .container{
     margin: 5%;
+
 }
 
 /**  section 1 (formulaire) ***/
@@ -245,7 +256,7 @@ section{
     justify-content: space-between;
 }
 .box_appear {
-    box-shadow: 0px 15px 8px #f6f6f6;/*droite-bas-degre-color */
+    box-shadow: 1px 6px 8px #f1f1f1;/*droite-bas-degre-color */
 }
 .box_appear:hover{
     transform: scale(0.9, 0.8);
@@ -269,10 +280,10 @@ section{
     padding: 20px;
     margin-bottom: 10px;
     margin-right: 3%;
-    width: 67%;
+    width: 78%;
 }
 .main-sec2 h2{
-    padding-left: 27px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
 .les_box{
@@ -284,10 +295,11 @@ section{
     border: 5px solid white;
     border-radius: 20px;
     /*width: 30%;*/
-    width: 200px;
+    width: 250px; 
     margin-bottom: 25px;
     background-color: white;
     flex-grow: 0;
+    
 }
 .box p, .box h4{
     padding-left: 20px;
@@ -325,13 +337,10 @@ section{
     border: 2px solid #F2F2F2;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 33%;
+    width: 30%;
+    max-height: 760px;
     padding-left: 13px;
-    padding-right: 13px;
-    
-
-
-    
+    padding-right: 13px;  
 }
 .sidebar h2{
     font-weight: bold;
@@ -342,6 +351,7 @@ section{
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 10px;
+    padding-top: 20px;
 }
 .titre_sidebar i{
     color: black;
@@ -355,7 +365,6 @@ section{
     margin-bottom: 40px;
     border-radius: 10px;
     flex-grow: 0;
-
 }
 .info_box_sidebar{
     display: flex;
@@ -382,12 +391,13 @@ section{
 .image_box_sidebar{
     border: 1px solid white;
     width: 45%;
-    height: 100%;
+    height: 160px;
+
 }
 .image_box_sidebar img{
     width: 100%;
     height: 160px;
-    object-fit: fill;
+    object-fit: cover;
     border: 2px solid none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -604,7 +614,8 @@ footer a{
 
 @media only screen and (max-width: 768px)
 {
-    /**
+
+/**
 * menu v2
 */
 .menuV2 {
@@ -646,14 +657,13 @@ footer a{
     font-size: 20px;
 
 }
-    .container{
-        /*margin: 20px;*/
-    }
+     
      
     .logo{
         margin: 0 auto;
     }
-     
+    
+    /* header version 1 avec ul li */
     ul {
         width: 100%;
     }
@@ -780,7 +790,7 @@ footer a{
         border-radius: 0px;
          margin: 0px;
         height: auto;
-
+        padding-left: 30px;
     }
     .info_box_sidebar{
         width: 55%;
