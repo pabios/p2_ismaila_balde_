@@ -474,6 +474,13 @@ section{
 .bm__item1-mt {
     padding-top: 13px;
 }
+
+.fort_pomegues_taille a img{
+    height: 260px;
+}
+.iles_friout_taille p img{
+    height: 130px;
+}
 /** footer **/
 footer{
     display: flex;
@@ -846,6 +853,12 @@ footer a{
     }
     .sec3 img{    
         object-fit:cover;
+    }
+    .fort_pomegues_taille a img{
+        height: 180px;
+    }
+    .iles_friout_taille p img{
+        height: 180px;
     }
      /** footer **/
      footer{
